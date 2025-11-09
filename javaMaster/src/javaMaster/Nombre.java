@@ -23,7 +23,7 @@ public class Nombre {
 		String java = sc.nextLine();
 		System.out.println(java);
 
-		System.out.println("¡Hola " + name + " en este ano " + ano + " maseras una gran programadora en " + java);
+		System.out.println("¡Hola " + name + " en este ano " + ano + " seras una gran programadora en " + java);
 	}
 
 }
