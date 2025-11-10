@@ -33,7 +33,7 @@ public class eliot {
 		System.out.println("\n-- Resultados --");
 		System.out.println("Cuentas con saldo negativo: " + cuentasNegativas);
 		System.out.println("Cuentas con saldo > 10000 $: " + cuentasSuperiores);
-		Cuentas con saldo("Saldo medio: " + saldoMedio);
+		System.out.println("Saldo medio: " + saldoMedio);
 	}
 
 }
