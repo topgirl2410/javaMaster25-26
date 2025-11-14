@@ -1,4 +1,4 @@
-package ejeciciosOpcionales;
+package ejerciciosOpcionales2;
 
 public class SwitchCase {
 
