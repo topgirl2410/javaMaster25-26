@@ -25,37 +25,35 @@ public class Controlador {
         // BUCLE PRINCIPAL DEL JUEGO
         do {
 
-            // Mostrar tablero al jugador
+
             System.out.println("\nTABLERO:");
             for (int i = 0; i < tablero.length; i++) {
                 for (int j = 0; j < tablero[i].length; j++) {
 
                     if (tablero[i][j] == 0 || tablero[i][j] == 1) {
-                        // 0 = agua, 1 = barco oculto
+
                         System.out.print(" ~ ");
                     } else if (tablero[i][j] == -1) {
-                        System.out.print(" X "); // tiro al agua
+                        System.out.print(" X ");
                     } else if (tablero[i][j] == 9) {
-                        System.out.print(" * "); // tocado
+                        System.out.print(" * ");
                     }
                 }
                 System.out.println();
             }
 
-            // Pedir coordenadas al usuario
             System.out.print("\nIntroduce fila (0-9): ");
             int fila = sc.nextInt();
 
             System.out.print("Introduce columna (0-9): ");
             int columna = sc.nextInt();
 
-            // Validación simple
+
             if (fila < 0 || fila > 9 || columna < 0 || columna > 9) {
                 System.out.println("Coordenadas fuera de rango.");
                 continue;
             }
 
-            // Lógica del disparo
             if (tablero[fila][columna] == 0) {
                 System.out.println("Agua.");
                 tablero[fila][columna] = -1;
@@ -72,7 +70,6 @@ public class Controlador {
 
             }
 
-            // Comprobación de si quedan barcos sin hundir
             boolean quedanBarcos = false;
 
             for (int[] filaT : tablero) {

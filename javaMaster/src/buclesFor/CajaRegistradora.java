@@ -7,11 +7,11 @@ public class CajaRegistradora {
 		Scanner sc = new Scanner(System.in);
 
 		double total = 0;
-		double cantidad = -1; // Valor inicial distinto al 0 para entrar al bucle
+		double cantidad = -1;
 
 		System.out.println("=== Simulacíon de Caja Registradora ===");
 
-		// Usamos un for sin limite definido en la condición
+
 		for (; cantidad != 0;) {
 			System.out.println("Introduce el precio del producto (0 para finalizar)");
 			cantidad = sc.nextDouble();
