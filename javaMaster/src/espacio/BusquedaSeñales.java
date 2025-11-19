@@ -30,7 +30,7 @@ public class BusquedaSeñales {
         int maxIntentos = 30; // límite de intentos
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("¡Bienvenido a la búsqueda de señales extraterrestres! 👽");
+        System.out.println("¡Bienvenido a la búsqueda de señales extraterrestres! ");
         System.out.println("Tienes un máximo de " + maxIntentos + " intentos para encontrar todas las señales.\n");
 
         while (encontradas < totalSeñales && intentos < maxIntentos) {
@@ -48,7 +48,7 @@ public class BusquedaSeñales {
             intentos++; // sumar intento
 
             if (espacio[fila][columna] == 0 && !visitado[fila][columna]) {
-                System.out.println("¡SEÑAL DETECTADA en (" + (fila+1) + ", " + (columna+1) + ")! 👽");
+                System.out.println("¡SEÑAL DETECTADA en (" + (fila+1) + ", " + (columna+1) + ")! ");
                 visitado[fila][columna] = true;
                 encontradas++;
             } else if (visitado[fila][columna]) {
@@ -62,9 +62,9 @@ public class BusquedaSeñales {
         }
 
         if (encontradas == totalSeñales) {
-            System.out.println("¡Felicidades! Has encontrado todas las señales extraterrestres. 🚀");
+            System.out.println("¡Felicidades! Has encontrado todas las señales extraterrestres. ");
         } else {
-            System.out.println("¡Misión fallida! No lograste encontrar todas las señales a tiempo. ☠️");
+            System.out.println("¡Misión fallida! No lograste encontrar todas las señales a tiempo. ☠");
         }
 
         // Mostrar matriz completa
